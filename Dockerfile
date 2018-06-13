@@ -33,7 +33,7 @@ RUN rm -rf /etc/apache2/sites-enabled/* \
  && a2enmod rewrite
 
 # extraction / installation
-ADD https://github.com/ampache/ampache/archive/3.8.5.tar.gz /opt/ampache.tar.gz
+ADD https://github.com/ampache/ampache/archive/3.8.6.tar.gz /opt/ampache.tar.gz
 RUN rm -rf /var/www/* \
  && tar -C /var/www -xf /opt/ampache.tar.gz --strip=1 \
  && rm /opt/ampache.tar.gz \
